@@ -440,7 +440,9 @@ mjx-container {
   }
 
   .post-preview {
-    transition: background-color 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    transition: transform 0.4s v.$ease-spring,
+      box-shadow 0.4s v.$ease-spring-soft,
+      background-color 0.35s v.$ease-spring-soft;
   }
 }
 
