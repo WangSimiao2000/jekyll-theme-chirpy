@@ -93,10 +93,13 @@ main {
 .post-preview {
   @extend %rounded;
 
+  position: relative;
   border: 0;
   background: var(--card-bg);
   box-shadow: var(--card-shadow);
-  transition: transform 0.4s v.$ease-spring, box-shadow 0.4s v.$ease-spring-soft;
+  transition: transform 0.4s v.$ease-spring,
+    box-shadow 0.4s v.$ease-spring-soft,
+    background 0.35s v.$ease-spring-soft;
 
   &::before {
     @extend %rounded;
