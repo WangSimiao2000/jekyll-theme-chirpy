@@ -94,7 +94,8 @@ main {
   @extend %rounded;
 
   position: relative;
-  border: 0;
+  border: 0 !important;
+  overflow: visible !important;
   background: var(--card-bg);
   box-shadow: var(--card-shadow);
   transition: transform 0.4s v.$ease-spring,
@@ -108,9 +109,12 @@ main {
     width: 100%;
     height: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
     background-color: var(--card-hover-bg);
     opacity: 0;
     transition: opacity 0.35s v.$ease-spring-soft;
+    pointer-events: none;
   }
 
   &:hover {
@@ -125,6 +129,19 @@ main {
       transform: scale(1.05);
     }
   }
+}
+
+/* tools/friends card wrapper: override Bootstrap .card overflow */
+.content .card.post-preview {
+  overflow: visible !important;
+  border: 0 !important;
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
+a.card.post-preview {
+  border-bottom: none !important;
+  text-decoration: none !important;
 }
 
 .post-meta {
