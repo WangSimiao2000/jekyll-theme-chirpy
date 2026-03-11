@@ -105,7 +105,7 @@ main {
     position: absolute;
     background-color: var(--card-hover-bg);
     opacity: 0;
-    transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   &:hover {
@@ -369,7 +369,7 @@ main {
   box-shadow: none;
   border-color: var(--input-focus-border-color) !important;
   background: center !important;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: background-color 0.15s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.15s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .left {
@@ -401,11 +401,11 @@ mjx-container {
   }
 
   .nav-link {
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .post-preview {
-    transition: background-color 0.35s ease-in-out;
+    transition: background-color 0.35s cubic-bezier(0.22, 1, 0.36, 1);
   }
 }
 

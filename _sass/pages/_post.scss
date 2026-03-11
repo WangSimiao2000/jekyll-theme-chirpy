@@ -210,30 +210,40 @@ header {
   .post-navigation {
     .btn,
     .btn::before {
-      transition: all 0.35s ease-in-out;
+      transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
     }
   }
 }
 
 @-webkit-keyframes fade-up {
-  from {
+  0% {
     opacity: 0;
-    margin-top: 4rem;
+    transform: translateY(2rem);
   }
 
-  to {
+  70% {
+    transform: translateY(-0.3rem);
+  }
+
+  100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @keyframes fade-up {
-  from {
+  0% {
     opacity: 0;
-    margin-top: 4rem;
+    transform: translateY(2rem);
   }
 
-  to {
+  70% {
+    transform: translateY(-0.3rem);
+  }
+
+  100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -252,7 +262,7 @@ header {
 
 #toc-wrapper {
   top: 0;
-  transition: top 0.2s ease-in-out;
+  transition: top 0.2s cubic-bezier(0.22, 1, 0.36, 1);
   overflow-y: auto;
   max-height: 100vh;
   scrollbar-width: none;
@@ -345,7 +355,7 @@ header {
   height: v.$topbar-height;
   background: var(--main-bg);
   border-bottom: 1px solid var(--main-border-color);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);
 
   @extend %btn-color;
 

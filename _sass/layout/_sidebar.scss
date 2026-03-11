@@ -17,7 +17,6 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   overflow-y: auto;
   width: v.$sidebar-width;
   background: var(--sidebar-bg);
-  border-right: 1px solid var(--sidebar-border-color);
 
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -67,10 +66,10 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     }
 
     img {
-      transition: transform 0.5s;
+      transition: transform 0.5s v.$ease-spring;
 
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.08);
       }
     }
   }

@@ -47,15 +47,15 @@
       left: 50%;
       bottom: 20%;
       transform: translateX(-50%);
-      -webkit-animation: popup 0.8s;
-      animation: popup 0.8s;
+      -webkit-animation: popup 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+      animation: popup 0.8s cubic-bezier(0.22, 1, 0.36, 1);
     }
   }
 }
 
 #toc-popup {
-  $slide-in: slide-in 0.3s ease-out;
-  $slide-out: slide-out 0.3s ease-out;
+  $slide-in: slide-in 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  $slide-out: slide-out 0.3s cubic-bezier(0.4, 0, 1, 1);
   $curtain-height: 2rem;
   $backdrop: blur(5px);
 

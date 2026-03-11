@@ -17,14 +17,14 @@
     .anchor {
       visibility: hidden;
       opacity: 0;
-      transition: opacity 0.25s ease-in, visibility 0s ease-in 0.25s;
+      transition: opacity 0.25s v.$ease-spring-enter, visibility 0s ease-in 0.25s;
     }
 
     &:hover {
       .anchor {
         visibility: visible;
         opacity: 1;
-        transition: opacity 0.25s ease-in, visibility 0s ease-in 0s;
+        transition: opacity 0.25s v.$ease-spring-enter, visibility 0s ease-in 0s;
       }
     }
   }
@@ -35,7 +35,7 @@
 
   background: var(--tag-hover);
   border-color: var(--tag-hover);
-  transition: background 0.35s ease-in-out;
+  transition: background 0.4s v.$ease-spring-soft;
 }
 
 %table-cell {
@@ -45,8 +45,8 @@
 }
 
 %link-hover {
-  color: #d2603a !important;
-  border-bottom: 1px solid #d2603a;
+  color: #B07D62 !important;
+  border-bottom: 1px solid #B07D62;
   text-decoration: none;
 }
 
@@ -59,7 +59,7 @@
 }
 
 %clickable-transition {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.35s v.$ease-spring-soft;
 }
 
 %no-cursor {
@@ -135,7 +135,7 @@
     width: -moz-fit-content;
     width: -webkit-fit-content;
     width: fit-content;
-    transition: background-color 1.75s ease-in-out;
+    transition: background-color 1.75s cubic-bezier(0.22, 1, 0.36, 1);
   }
 }
 

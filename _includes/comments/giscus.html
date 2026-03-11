@@ -1,7 +1,10 @@
 <!-- https://giscus.app/ -->
 <script>
   (function () {
-    const themeMapper = Theme.getThemeMapper('light', 'dark_dimmed');
+    const themeMapper = Theme.getThemeMapper(
+      '{{ site.url }}/assets/css/giscus-morandi-light.css',
+      '{{ site.url }}/assets/css/giscus-morandi-dark.css'
+    );
     const initTheme = themeMapper[Theme.visualState];
 
     let lang = '{{ site.comments.giscus.lang | default: lang }}';

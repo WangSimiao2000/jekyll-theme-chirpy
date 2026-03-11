@@ -1,120 +1,119 @@
 @mixin styles {
-  /* Framework color */
-  --main-bg: white;
-  --mask-bg: #c1c3c5;
-  --main-border-color: #f3f3f3;
+  /* Framework color — Morandi warm gray */
+  --main-bg: #F5F0EB;
+  --mask-bg: #C8C1B9;
+  --main-border-color: #E5DED6;
 
-  /* Common color */
-  --text-color: #34343c;
-  --text-muted-color: #757575;
+  /* Common color — Morandi palette */
+  --text-color: #4A4A4A;
+  --text-muted-color: #8E8E8E;
   --text-muted-highlight-color: inherit;
-  --heading-color: #2a2a2a;
-  --label-color: #585858;
-  --blockquote-border-color: #eeeeee;
-  --blockquote-text-color: #757575;
-  --link-color: #0056b2;
-  --link-underline-color: #dee2e6;
-  --button-bg: #ffffff;
-  --btn-border-color: #e9ecef;
-  --btn-backtotop-color: #686868;
-  --btn-backtotop-border-color: #f1f1f1;
-  --checkbox-color: #c5c5c5;
-  --checkbox-checked-color: #07a8f7;
-  --img-bg: radial-gradient(circle, rgb(255 255 255) 0%, rgb(239 239 239) 100%);
+  --heading-color: #3D3D3D;
+  --label-color: #6B6B6B;
+  --blockquote-border-color: #DDD6CE;
+  --blockquote-text-color: #8E8E8E;
+  --link-color: #B07D62;
+  --link-underline-color: #DDD6CE;
+  --button-bg: #EFEBE7;
+  --btn-border-color: #D9D0C7;
+  --btn-backtotop-color: #7A7A7A;
+  --btn-backtotop-border-color: #E5DED6;
+  --checkbox-color: #C5BDB5;
+  --checkbox-checked-color: #7D9B8A;
+  --img-bg: radial-gradient(circle, rgb(245 240 235) 0%, rgb(232 224 216) 100%);
   --shimmer-bg: linear-gradient(
     90deg,
-    rgb(250 250 250 / 0%) 0%,
-    rgb(232 230 230 / 100%) 50%,
-    rgb(250 250 250 / 0%) 100%
+    rgb(245 240 235 / 0%) 0%,
+    rgb(220 213 205 / 100%) 50%,
+    rgb(245 240 235 / 0%) 100%
   );
 
-  /* Sidebar */
-  --site-title-color: rgb(113 113 113);
-  --site-subtitle-color: #717171;
-  --sidebar-bg: #f6f8fa;
-  --sidebar-border-color: #efefef;
-  --sidebar-muted-color: #545454;
-  --sidebar-active-color: #1d1d1d;
-  --sidebar-hover-bg: rgb(223 233 241 / 64%);
-  --sidebar-btn-bg: white;
-  --sidebar-btn-color: #8e8e8e;
-  --avatar-border-color: white;
+  /* Sidebar — Morandi warm gray */
+  --site-title-color: #7A7268;
+  --site-subtitle-color: #8A8279;
+  --sidebar-bg: #E8E0D8;
+  --sidebar-border-color: #DDD6CE;
+  --sidebar-muted-color: #6B6360;
+  --sidebar-active-color: #6B8F71;
+  --sidebar-hover-bg: rgb(215 207 198 / 64%);
+  --sidebar-btn-bg: #F0EAE4;
+  --sidebar-btn-color: #9A928A;
+  --avatar-border-color: #F5F0EB;
 
   /* Topbar */
-  --topbar-bg: rgb(255 255 255 / 70%);
-  --topbar-text-color: rgb(78 78 78);
-  --search-border-color: rgb(240 240 240);
-  --search-icon-color: #c2c6cc;
-  --input-focus-border-color: #b8b8b8;
+  --topbar-bg: rgb(245 240 235 / 70%);
+  --topbar-text-color: #5A5A5A;
+  --search-border-color: #E0D8D0;
+  --search-icon-color: #B8B0A8;
+  --input-focus-border-color: #B07D62;
 
   /* Home page */
-  --post-list-text-color: dimgray;
-  --btn-patinator-text-color: #555555;
+  --post-list-text-color: #6B6B6B;
+  --btn-patinator-text-color: #5A5A5A;
   --btn-paginator-hover-color: var(--sidebar-bg);
 
-  /* Posts */
-  --toc-highlight: #0550ae;
-  --toc-popup-border-color: lightgray;
-  --btn-share-color: gray;
-  --btn-share-hover-color: #0d6efd;
-  --card-bg: white;
-  --card-hover-bg: #e2e2e2;
-  --card-shadow: rgb(104 104 104 / 5%) 0 2px 6px 0,
-    rgb(211 209 209 / 15%) 0 0 0 1px;
-  --footnote-target-bg: lightcyan;
-  --tb-odd-bg: #fbfcfd;
-  --tb-border-color: #eaeaea;
-  --dash-color: silver;
-  --kbd-wrap-color: #bdbdbd;
+  /* Posts — terracotta accent + sage green TOC */
+  --toc-highlight: #7D9B8A;
+  --toc-popup-border-color: #D4C5B9;
+  --btn-share-color: #9A928A;
+  --btn-share-hover-color: #B07D62;
+  --card-bg: #FDFBF9;
+  --card-hover-bg: #EDE7E0;
+  --card-shadow: rgb(120 110 100 / 6%) 0 1px 3px 0;
+  --footnote-target-bg: #E8F0E8;
+  --tb-odd-bg: #F8F4F0;
+  --tb-border-color: #E5DED6;
+  --dash-color: #C8C1B9;
+  --kbd-wrap-color: #C5BDB5;
   --kbd-text-color: var(--text-color);
-  --kbd-bg-color: white;
-  --prompt-text-color: rgb(46 46 46 / 77%);
-  --prompt-tip-bg: rgb(123 247 144 / 20%);
-  --prompt-tip-icon-color: #03b303;
-  --prompt-info-bg: #e1f5fe;
-  --prompt-info-icon-color: #0070cb;
-  --prompt-warning-bg: rgb(255 243 205);
-  --prompt-warning-icon-color: #ef9c03;
-  --prompt-danger-bg: rgb(248 215 218 / 56%);
-  --prompt-danger-icon-color: #df3c30;
+  --kbd-bg-color: #FDFBF9;
+  --prompt-text-color: rgb(60 55 50 / 77%);
+  --prompt-tip-bg: #D5E5D0;
+  --prompt-tip-icon-color: #6B8F71;
+  --prompt-info-bg: #D0DDE5;
+  --prompt-info-icon-color: #5A7D8F;
+  --prompt-warning-bg: #E8DCC8;
+  --prompt-warning-icon-color: #B09060;
+  --prompt-danger-bg: #E5D0D0;
+  --prompt-danger-icon-color: #B06060;
 
   /* Tags */
-  --tag-border: #dee2e6;
+  --tag-border: #DDD6CE;
   --tag-shadow: var(--btn-border-color);
-  --tag-hover: rgb(222 226 230);
-  --search-tag-bg: #f8f9fa;
+  --tag-hover: #D4C5B9;
+  --search-tag-bg: #F0EAE4;
 
   /* Categories */
-  --categories-border: rgb(0 0 0 / 12.5%);
+  --categories-border: rgb(80 70 60 / 12%);
   --categories-hover-bg: var(--btn-border-color);
-  --categories-icon-hover-color: darkslategray;
+  --categories-icon-hover-color: #6B8F71;
 
   /* Archive */
-  --timeline-color: rgb(0 0 0 / 7.5%);
-  --timeline-node-bg: #c2c6cc;
-  --timeline-year-dot-color: #ffffff;
+  --timeline-color: rgb(80 70 60 / 10%);
+  --timeline-node-bg: #B8B0A8;
+  --timeline-year-dot-color: #F5F0EB;
 
-  /* --- Custom code light mode colors --- */
-  --language-border-color: #ececec;
-  --highlight-bg-color: #f6f8fa;
-  --highlighter-rouge-color: #3f596f;
-  --highlight-lineno-color: #9e9e9e;
-  --inline-code-bg: rgb(25 25 28 / 5%);
-  --code-color: #3a3a3a;
-  --code-header-text-color: #a3a3a3;
-  --code-header-muted-color: #e5e5e5;
-  --code-header-icon-color: #c9c8c8;
-  --clipboard-checked-color: #43c743;
+  /* --- Code — Morandi toned --- */
+  --language-border-color: #E0D8D0;
+  --highlight-bg-color: #F0EAE4;
+  --highlighter-rouge-color: #5A7D6A;
+  --highlight-lineno-color: #A8A098;
+  --inline-code-bg: rgb(80 70 60 / 6%);
+  --code-color: #4A4A4A;
+  --code-header-text-color: #A8A098;
+  --code-header-muted-color: #DDD6CE;
+  --code-header-icon-color: #C5BDB5;
+  --clipboard-checked-color: #6B8F71;
 
   [class^='prompt-'] {
-    --link-underline-color: rgb(219 216 216);
+    --link-underline-color: rgb(200 193 185);
   }
 
   .dark {
     display: none;
   }
 
-  /* --- Syntax highlight theme from `rougify style github` --- */
+  /* --- Syntax highlight — Morandi light --- */
 
   .highlight table td {
     padding: 5px;
@@ -126,8 +125,8 @@
 
   .highlight,
   .highlight .w {
-    color: #24292f;
-    background-color: #f6f8fa;
+    color: #4A4A4A;
+    background-color: #F0EAE4;
   }
 
   .highlight .k,
@@ -137,53 +136,53 @@
   .highlight .kr,
   .highlight .kt,
   .highlight .kv {
-    color: #cf222e;
+    color: #B06060;
   }
 
   .highlight .gr {
-    color: #f6f8fa;
+    color: #F0EAE4;
   }
 
   .highlight .gd {
-    color: #82071e;
-    background-color: #ffebe9;
+    color: #8C4040;
+    background-color: #F0DADA;
   }
 
   .highlight .nb {
-    color: #953800;
+    color: #8A6840;
   }
 
   .highlight .nc {
-    color: #953800;
+    color: #8A6840;
   }
 
   .highlight .no {
-    color: #953800;
+    color: #8A6840;
   }
 
   .highlight .nn {
-    color: #953800;
+    color: #8A6840;
   }
 
   .highlight .sr {
-    color: #116329;
+    color: #5A7D6A;
   }
 
   .highlight .na {
-    color: #116329;
+    color: #5A7D6A;
   }
 
   .highlight .nt {
-    color: #116329;
+    color: #5A7D6A;
   }
 
   .highlight .gi {
-    color: #116329;
-    background-color: #dafbe1;
+    color: #5A7D6A;
+    background-color: #DAF0E0;
   }
 
   .highlight .kc {
-    color: #0550ae;
+    color: #5A6D8F;
   }
 
   .highlight .l,
@@ -196,27 +195,27 @@
   .highlight .il,
   .highlight .mo,
   .highlight .mx {
-    color: #0550ae;
+    color: #5A6D8F;
   }
 
   .highlight .sb {
-    color: #0550ae;
+    color: #5A6D8F;
   }
 
   .highlight .bp {
-    color: #0550ae;
+    color: #5A6D8F;
   }
 
   .highlight .ne {
-    color: #0550ae;
+    color: #5A6D8F;
   }
 
   .highlight .nl {
-    color: #0550ae;
+    color: #5A6D8F;
   }
 
   .highlight .py {
-    color: #0550ae;
+    color: #5A6D8F;
   }
 
   .highlight .nv,
@@ -224,21 +223,21 @@
   .highlight .vg,
   .highlight .vi,
   .highlight .vm {
-    color: #0550ae;
+    color: #5A6D8F;
   }
 
   .highlight .o,
   .highlight .ow {
-    color: #0550ae;
+    color: #5A6D8F;
   }
 
   .highlight .gh {
-    color: #0550ae;
+    color: #5A6D8F;
     font-weight: bold;
   }
 
   .highlight .gu {
-    color: #0550ae;
+    color: #5A6D8F;
     font-weight: bold;
   }
 
@@ -253,21 +252,21 @@
   .highlight .sx,
   .highlight .s1,
   .highlight .ss {
-    color: #0a3069;
+    color: #6B5A3E;
   }
 
   .highlight .nd {
-    color: #8250df;
+    color: #8A6D8F;
   }
 
   .highlight .nf,
   .highlight .fm {
-    color: #8250df;
+    color: #8A6D8F;
   }
 
   .highlight .err {
-    color: #f6f8fa;
-    background-color: #82071e;
+    color: #F0EAE4;
+    background-color: #8C4040;
   }
 
   .highlight .c,
@@ -278,32 +277,32 @@
   .highlight .cpf,
   .highlight .c1,
   .highlight .cs {
-    color: #68717a;
+    color: #9A928A;
   }
 
   .highlight .gl {
-    color: #68717a;
+    color: #9A928A;
   }
 
   .highlight .gt {
-    color: #68717a;
+    color: #9A928A;
   }
 
   .highlight .ni {
-    color: #24292f;
+    color: #4A4A4A;
   }
 
   .highlight .si {
-    color: #24292f;
+    color: #4A4A4A;
   }
 
   .highlight .ge {
-    color: #24292f;
+    color: #4A4A4A;
     font-style: italic;
   }
 
   .highlight .gs {
-    color: #24292f;
+    color: #4A4A4A;
     font-weight: bold;
   }
 }

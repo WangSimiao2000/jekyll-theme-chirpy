@@ -15,8 +15,9 @@
   width: v.$back2top-size;
   height: v.$back2top-size;
   border-radius: 50%;
-  border: 1px solid var(--btn-backtotop-border-color);
-  transition: opacity 0.5s ease-in-out, transform 0.2s ease-out;
+  border: none;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
+  transition: opacity 0.5s v.$ease-spring-soft, transform 0.3s v.$ease-spring;
 
   @include bp.lg {
     right: 5%;
@@ -34,8 +35,8 @@
   }
 
   &:hover {
-    transform: translate3d(0, -5px, 0);
-    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translateY(-3px);
+    box-shadow: 0 3px 8px rgb(0 0 0 / 12%);
   }
 
   i {
